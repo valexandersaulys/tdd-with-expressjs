@@ -21,9 +21,20 @@ Two API endpoints
 
   * `POST` /api/v1/number
     * return the `id` with `201` if created
-    * return status code of 500 if not created
+    * return status code of 400 if a non-number is passed
 
   * `GET` /api/v1/number
-    * return error with message "not found"
+    * return 404 error with message "not found"
     * return `202` if still processing
-    * return 
+    * return `200` with content if done
+
+
+To Consider
+
+  * too large a number when cubing?
+
+
+Other notes
+
+  * 422 is not a real thing so its best to avoid (`unprocessable
+    type`)
