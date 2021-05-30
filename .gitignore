@@ -1,0 +1,7 @@
+*~
+\#*\#
+*log
+*tmp
+*/*log
+*/*tmp
+node_modules/*
